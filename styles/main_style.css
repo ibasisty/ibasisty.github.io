@@ -1,0 +1,154 @@
+:root {
+    --light-color: #e8e8ea;
+    --dark-color: #17161c;
+    --second-color: #dadadc;
+}
+
+
+html, body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Минимальная высота — весь экран */
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 7px 7px 40px #17161c50;
+    position: relative;
+    background-color: var(--light-color);
+}
+
+.separator {
+    height: 2px;
+    background-color: var(--dark-color);
+    width: 100%;
+}
+/* IMAGES */
+.header-img {
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+    filter: opacity(80%);
+    position: absolute;
+}
+
+.avatar-img {
+    width: 130px;
+    height: 130px;
+}
+
+
+/* FLEX COLUMN */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.half-content {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* LEFT */
+
+.left-half { 
+    height: 95%;
+    /* background-color: rgba(137, 43, 226, 0.281); */
+    background-color: var(--light-color);
+}
+
+.left-card {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    background-color: var(--second-color);
+    border-radius: 12px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.dark_subcard {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: 0 0 12px 12px;
+}
+
+/* RIGHT */
+
+.right-half {
+    height: 70%;
+    background-color: rgba(127, 255, 212, 0.219);
+}
+
+
+/* MEDIA */
+
+/* Если ширина экрана 600px и больше */
+@media (min-width: 600px) {
+
+
+}
+
+
+/* Если ширина экрана 900px и больше */
+@media (min-width: 900px) {
+    html, body { height: 100%; }
+
+    main {
+        width: 900px;
+        height: 90%;
+        border-radius: 8px;
+    }
+
+    /* IMAGES */
+
+    .header-img {
+        height: 200px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .avatar-img {
+        width: 230px;
+        height: 230px;
+    }
+
+    /* FLEX COLUMN */
+
+    .main-content {
+        flex-direction: row;
+        align-items: end;
+        gap: 6%;
+    }
+
+    /* LEFT */
+
+    .left-half {
+        width: 30%;
+    }
+
+    .left-card {
+        max-height: 69%;
+    }
+
+    /* RIGHT */
+
+    .right-half {
+        width: 50%;
+    }
+}

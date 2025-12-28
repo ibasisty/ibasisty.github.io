@@ -1,0 +1,106 @@
+/* Очистка стилей браузера */
+
+
+/* Reset всех стилей */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Убираем стандартные стили у списков */
+ul,
+ol,
+dl,
+li {
+  list-style: none;
+}
+
+/* Убираем стандартные отступы у заголовков и параграфов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+/* Убираем стандартные стили у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем стандартные стили у изображений */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+/* Убираем стандартные стили у таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Убираем стандартные стили у форм */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Убираем стандартные стили у элементов формы */
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Убираем стандартные отступы у pre и code */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Убираем отступы у body */
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Убираем отступы у контейнеров */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+
+
+
