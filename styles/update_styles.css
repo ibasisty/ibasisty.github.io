@@ -9,15 +9,16 @@ p {
 }
 
 a {
-    text-decoration: none;
-}
-
-a:hover {
     text-decoration: underline;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #e8e8ea;
+}
+
 ul, ol {
-    margin: 0 0 1rem;
+    margin: 0.5rem;
     padding-left: 1.5rem;
 }
 
@@ -28,5 +29,5 @@ li {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }
