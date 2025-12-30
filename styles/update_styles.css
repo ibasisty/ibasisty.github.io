@@ -1,0 +1,33 @@
+h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #e8e8ea;
+}
+
+ul, ol {
+    margin: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin: 0 0 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 4px; */
+}
