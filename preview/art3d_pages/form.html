@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page1/normalize.css">
+    <link rel="stylesheet" href="page1/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <div class="flex-container">
+            <div class="leftbar">
+                <div class="leftbar__title">
+                    SEND 
+                    <br>
+                    A REQUEST
+                </div>
+                <div class="leftbar__description">
+                    Leave your contacts
+                    <br>
+                    and we will contact 
+                    <br>
+                    you as soon as possible
+                </div>
+                <img class="leftbar__icon" src="page1/assets/Логотип.svg" alt="dots icon">
+            </div>
+            <div class="form">
+                <div class="form__list">
+                    <div>
+                        <p>Name</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>Phone</p>
+                        <input id="phoneInput" type="tel">
+                        <span id="phoneError" class="input-error">
+                            Некорректный номер
+                        </span>
+                    </div>
+                    <div>
+                        <p>Temp</p>
+                        <div class="slider-container">
+                        <input type="range" id="colorSlider" min="0" max="100" value="30">
+                        <div class="slider-labels">
+                            <span class="label-left">Hot</span>
+                            <span class="label-right">Cold</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__textarea">
+                    <div>
+                        <p>Comments</p>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="form__actions">
+                    <button>Call me</button>
+                    <span>
+                        By pressing “Send” button 
+                        <br>
+                        I agree with <span class="policy">Privacy Policy</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span class="year">© 2022 LUXURY RESIDENCE</span>
+            <span class="policy">Privacy Policy</span>
+        </footer>
+    </main>
+    <script src="page1/script.js"></script>
+</body>
+</html>
